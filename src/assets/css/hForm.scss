@@ -1,0 +1,54 @@
+/*
+ * @Author: Ygm
+ * @Date:
+ * @LastEditors: Ygm
+ * @LastEditTime:
+ * @Description: 表单公共样式
+*/
+// 上下结构
+.layout-tb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx 0 0;
+  margin-bottom: 25rpx;
+}
+
+// 左右结构
+.layout-lr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  margin-bottom: 15rpx;
+}
+
+.border {
+  border-bottom: 1px solid #f4f4f5;
+}
+
+.form-item__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+
+  .form-item__text {
+    margin-right: 10rpx;
+  }
+
+  .form-item__dot {
+    margin-top: 12rpx;
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #fa5747;
+  }
+}
+
+.form-tips {
+  position: absolute;
+  bottom: -35rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: rgb(245, 108, 108);
+}

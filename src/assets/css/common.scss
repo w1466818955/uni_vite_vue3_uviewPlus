@@ -1,0 +1,41 @@
+/* 公文样式 */
+$picker-color-primary: #3c9cff;
+
+// padding
+.plr20 {
+  padding: 0 40rpx;
+}
+
+// margin-left
+.ml10 {
+  margin-left: 20rpx;
+}
+
+.ml20 {
+  margin-left: 40rpx;
+}
+
+// 弹性布局
+.df {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}

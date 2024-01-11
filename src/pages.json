@@ -1,0 +1,124 @@
+{
+  "easycom": {
+    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  // 页面路由配置
+  "pages": [
+    {
+      "name": "Login",
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "登录"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "name": "Home",
+      "path": "pages/home/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      },
+      "meta": {
+        "tabbar": true,
+        "ignoreAuth": false
+      }
+    },
+    {
+      "name": "Mine",
+      "path": "pages/mine/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": false
+      },
+      "meta": {
+        "tabbar": true,
+        "ignoreAuth": false
+      }
+    },
+    {
+      "name": "NotFound",
+      "path": "pages/notFound/404",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "404",
+        "enablePullDownRefresh": false
+      },
+      "meta": {
+        "ignoreAuth": false
+      }
+    },
+    {
+      "path": "pages/form/index",
+      "style": {
+        "navigationBarTitleText": "表单",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  // 小程序分包页面路由配置
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "list/test1",
+          "style": {
+            "navigationBarTitleText": "test1"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "list/test2",
+          "style": {
+            "navigationBarTitleText": "test2",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    }
+  ],
+  // 全局样式配置
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F2F2F2",
+    "backgroundColor": "#F2F2F2",
+    "navigationStyle": "default",
+    "renderingMode": "seperated",
+    "pageOrientation": "portrait"
+  },
+  // tabbar配置
+  "tabBar": {
+    "color": "#919599",
+    "selectedColor": "#2478F6",
+    "backgroundColor": "#F2F2F2",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/index",
+        "iconPath": "static/imgs/tabbar/home.png",
+        "selectedIconPath": "static/imgs/tabbar/home_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/imgs/tabbar/mine.png",
+        "selectedIconPath": "static/imgs/tabbar/mine_selected.png"
+      }
+    ]
+  }
+}
